@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Publications | Mitchell Piehl</title>
+  <meta name="description" content="Papers by Mitchell Piehl on memory systems for large language models (MemFit, ER-MIA, LATERN) and math reasoning in LLMs (EVoSS), with abstracts and BibTeX.">
+  <link rel="canonical" href="https://mitchellpiehl.com/publications.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Mitchell Piehl">
+  <meta property="og:title" content="Publications | Mitchell Piehl">
+  <meta property="og:description" content="Papers on memory systems for large language models, with abstracts and BibTeX.">
+  <meta property="og:url" content="https://mitchellpiehl.com/publications.html">
+  <meta property="og:image" content="https://mitchellpiehl.com/assets/img/social-card.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#fcfbf8" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#141413" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&amp;family=Source+Serif+4:ital,opsz,wght@0,8..60,400..700;1,8..60,400..700&amp;display=swap">
+  <link rel="stylesheet" href="assets/css/site.css">
+  <script>document.documentElement.classList.add("js")</script>
+  <script src="assets/js/site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="wordmark" href="./">Mitchell Piehl</a>
+      <nav class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="publications.html" aria-current="page">Publications</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="wrap">
+      <div class="page-head">
+        <h1>Publications</h1>
+        <p class="lede">Newest first. You can also find these on <a href="https://scholar.google.com/citations?user=_JR4vFcAAAAJ">Google Scholar</a>.</p>
+      </div>
+
+      <h2 class="pub-year">2026</h2>
+      <div class="pub-list">
+
+        <article class="pub" id="memfit">
+          <div class="pub-venue"><span class="badge">Under review</span></div>
+          <div class="pub-body">
+            <h3 class="pub-title">MemFit: Efficient Long-Term Agentic Memory</h3>
+            <p class="pub-authors"><span class="me">Mitchell Piehl</span>, Muchao Ye</p>
+            <p class="pub-tldr">Most memory systems run new messages through an LLM before storing them. MemFit stores each turn word for word with no LLM call and puts the work into retrieval, using lexical and semantic search, two ways of widening the candidate pool, and a cross-encoder. It had the best overall results on LoCoMo, LongMemEval-S, and MemGallery and built memory 3.9 to 52.6&times; faster than the systems we compared against.</p>
+            <div class="pub-actions">
+              <!-- When MemFit is on arXiv: <a class="chip" href="https://arxiv.org/abs/XXXX.XXXXX">arXiv</a> -->
+              <!-- When the code is public: <a class="chip" href="https://github.com/mitchellpiehl/REPO">Code</a> -->
+              <a class="chip" href="research.html#memfit">Summary</a>
+              <button class="chip pub-toggle" type="button" aria-expanded="false" aria-controls="memfit-abstract">Abstract</button>
+              <button class="chip pub-toggle" type="button" aria-expanded="false" aria-controls="memfit-bibtex">BibTeX</button>
+            </div>
+            <div class="pub-panel panel-abstract" id="memfit-abstract">
+              <p>Long-term memory systems for large language models (LLMs) have gained popularity for extending reasoning capabilities across applications. Current memory systems rely on LLM agents to organize and consolidate memory, resulting in costly, inefficient write operations. To address this limitation, we propose MemFit, a long-term memory system for conversational agents that reduces the cost and latency of memory operations. Unlike existing systems that rely on expensive LLM calls for memory construction or discard surface-level details through compression, MemFit stores each turn verbatim in an append-only store with near-instantaneous, LLM-free insertion, indexing turns with segment summaries rather than replacing them. Additionally, MemFit uses an LLM-free, multi-path retrieval strategy that combines lexical and semantic signals with cross-encoder reranking over caption-augmented episodes in both textual and multimodal settings. Empirical results on three widely used benchmarks, LoCoMo, MemGallery, and LongMemEval-S, show that MemFit achieves state-of-the-art performance while reducing memory construction time and cost several-fold, providing a scalable and efficient solution for persistent agentic memory.</p>
+            </div>
+            <div class="pub-panel bibtex" id="memfit-bibtex">
+<pre><code>@misc{piehl2026memfit,
+  title  = {{MemFit}: Efficient Long-Term Agentic Memory},
+  author = {Piehl, Mitchell and Ye, Muchao},
+  year   = {2026},
+  note   = {Under review}
+}</code></pre>
+            </div>
+          </div>
+        </article>
+
+        <article class="pub" id="latern">
+          <div class="pub-venue"><span class="badge">Under review</span></div>
+          <div class="pub-body">
+            <h3 class="pub-title"><a href="https://arxiv.org/abs/2605.15054">LATERN: Test-Time Context-Aware Explainable Video Anomaly Detection</a></h3>
+            <p class="pub-authors"><span class="me">Mitchell Piehl</span>, Muchao Ye</p>
+            <p class="pub-tldr">Video anomaly detection with a frozen vision-language model, run entirely at test time. LATERN keeps a checked, image-grounded memory of earlier segments and groups segment scores into events, so each incident gets one explanation. It had the best AUC on UCF-Crime and the best AP on XD-Violence among the frozen-model methods we compared.</p>
+            <div class="pub-actions">
+              <a class="chip" href="https://arxiv.org/abs/2605.15054">arXiv</a>
+              <!-- When the code is public: <a class="chip" href="https://github.com/mitchellpiehl/REPO">Code</a> -->
+              <a class="chip" href="research.html#latern">Summary</a>
+              <button class="chip pub-toggle" type="button" aria-expanded="false" aria-controls="latern-abstract">Abstract</button>
+              <button class="chip pub-toggle" type="button" aria-expanded="false" aria-controls="latern-bibtex">BibTeX</button>
+            </div>
+            <div class="pub-panel panel-abstract" id="latern-abstract">
+              <p>Vision-language models (VLMs) have recently emerged as a promising paradigm for video anomaly detection (VAD) due to their strong visual reasoning capabilities and natural-language-based explainability. In this paper, we address a key limitation of such pipelines: they perform segment-level inference independently due to token constraints and reason without structured temporal context, resulting in fragmented predictions and inconsistent explanations. We instead let VLMs interpret anomalies as deviations from evolving video dynamics. To specify, we propose a context-aware framework named LATERN, which reformulates VAD as a temporal evidence aggregation process. LATERN consists of two complementary modules: Context-Aware Anomaly Scoring (CEA) and Recursive Evidence Aggregation (REA). CEA introduces a novel image-grounded memory mechanism that selects historical content based on frame diversity and visual-textual alignment, serving as expanded context to help generate reliable anomaly scores. Building upon these scores, REA performs recursive temporal aggregation to identify coherent anomaly intervals and produce event-level decisions and explanations grounded in visual-textual evidence. Experiments on standard VAD benchmarks, UCF-Crime and XD-Violence, show that LATERN enhances detection accuracy and explanation consistency for frozen VLMs during test time, while generating temporally coherent and semantically grounded event-level explanations.</p>
+            </div>
+            <div class="pub-panel bibtex" id="latern-bibtex">
+<pre><code>@misc{piehl2026latern,
+  title         = {{LATERN}: Test-Time Context-Aware Explainable Video Anomaly Detection},
+  author        = {Piehl, Mitchell and Ye, Muchao},
+  year          = {2026},
+  eprint        = {2605.15054},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CV}
+}</code></pre>
+            </div>
+          </div>
+        </article>
+
+        <article class="pub" id="ermia">
+          <div class="pub-venue"><span class="badge">Under review</span></div>
+          <div class="pub-body">
+            <h3 class="pub-title"><a href="https://arxiv.org/abs/2602.15344">ER-MIA: Black-Box Adversarial Memory Injection Attacks on Long-Term Memory-Augmented Large Language Models</a></h3>
+            <p class="pub-authors"><span class="me">Mitchell Piehl</span>, Zhaohan Xi, Zuobin Xiong, Pan He, Muchao Ye</p>
+            <p class="pub-tldr">Black-box attacks that plant false memories through normal conversation and use SVD-based embedding optimization to get them retrieved. We test them on A-MEM, Mem0, and LightMem with three victim models, and we evaluate a write-time filter as a defense.</p>
+            <div class="pub-actions">
+              <a class="chip" href="https://arxiv.org/abs/2602.15344">arXiv</a>
+              <!-- When the code is public: <a class="chip" href="https://github.com/mitchellpiehl/REPO">Code</a> -->
+              <a class="chip" href="research.html#ermia">Summary</a>
+              <button class="chip pub-toggle" type="button" aria-expanded="false" aria-controls="ermia-abstract">Abstract</button>
+              <button class="chip pub-toggle" type="button" aria-expanded="false" aria-controls="ermia-bibtex">BibTeX</button>
+            </div>
+            <div class="pub-panel panel-abstract" id="ermia-abstract">
+              <p>Long-term memory systems are increasingly adopted to enable persistent reasoning in large language models (LLMs) beyond finite context windows, but they simultaneously expand the attack surface against LLMs. However, adversarial attacks against memory retrieval mechanisms remain underexplored, especially in realistic black-box settings. We present a systematic study of black-box adversarial memory injection attacks targeting similarity-based retrieval in memory-augmented LLMs. Specifically, we introduce ER-MIA, a unified framework that exposes this vulnerability and formalizes two realistic attack settings: content-based attacks and question-targeted attacks. In these settings, ER-MIA includes an arsenal of composable attack primitives and ensemble attacks that combine LLM-based heuristic generation with SVD-based embedding optimization to achieve high success rates even under strict black-box constraints. Experiments across three memory systems and three victim LLMs show that targeted injected memories reduce question answering accuracy by up to 25.1 points, that larger victim models are no more robust, and that attacks optimized against one embedding model transfer to a system retrieving with a different one.</p>
+            </div>
+            <div class="pub-panel bibtex" id="ermia-bibtex">
+<pre><code>@misc{piehl2026ermia,
+  title         = {{ER-MIA}: Black-Box Adversarial Memory Injection Attacks on Long-Term Memory-Augmented Large Language Models},
+  author        = {Piehl, Mitchell and Xi, Zhaohan and Xiong, Zuobin and He, Pan and Ye, Muchao},
+  year          = {2026},
+  eprint        = {2602.15344},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.LG}
+}</code></pre>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <h2 class="pub-year">2025</h2>
+      <div class="pub-list">
+        <article class="pub" id="evoss">
+          <div class="pub-venue"><span class="badge badge-published">ICMLA 2025</span></div>
+          <div class="pub-body">
+            <h3 class="pub-title"><a href="https://arxiv.org/abs/2509.18565">Solving Math Word Problems Using Estimation Verification and Equation Generation</a></h3>
+            <p class="pub-authors"><span class="me">Mitchell Piehl</span>, Dillon Wilson, Ananya Kalita, Jugal Kalita</p>
+            <p class="pub-where">IEEE International Conference on Machine Learning and Applications (ICMLA), 2025</p>
+            <p class="pub-tldr">The LLM writes equations for a symbolic solver, then estimates the answer the way math teachers tell students to, and uses that estimate to check the exact result. New state-of-the-art results on numeric and algebraic word problems, plus two new datasets, SVAMPClean and Trig300.</p>
+            <div class="pub-actions">
+              <a class="chip" href="https://arxiv.org/abs/2509.18565">arXiv</a>
+              <a class="chip" href="https://github.com/mitchellpiehl/EVoSS">Code</a>
+              <button class="chip pub-toggle" type="button" aria-expanded="false" aria-controls="evoss-abstract">Abstract</button>
+              <button class="chip pub-toggle" type="button" aria-expanded="false" aria-controls="evoss-bibtex">BibTeX</button>
+            </div>
+            <div class="pub-panel panel-abstract" id="evoss-abstract">
+              <p>Large Language Models (LLMs) excel at various tasks, including problem-solving and question-answering. However, LLMs often find Math Word Problems (MWPs) challenging because solving them requires a range of reasoning and mathematical abilities with which LLMs seem to struggle. Recent efforts have helped LLMs solve more complex MWPs with improved prompts. This study proposes a novel method that initially prompts an LLM to create equations from a decomposition of the question, followed by using an external symbolic equation solver to produce an answer. To ensure the accuracy of the obtained answer, inspired by an established recommendation of math teachers, the LLM is instructed to solve the MWP a second time, but this time with the objective of estimating the correct answer instead of solving it exactly. The estimation is then compared to the generated answer to verify. If verification fails, an iterative rectification process is employed to ensure the correct answer is eventually found. This approach achieves new state-of-the-art results on datasets used by prior published research on numeric and algebraic MWPs, improving the previous best results by nearly two percent on average. In addition, the approach obtains satisfactory results on trigonometric MWPs, a task not previously attempted to the authors' best knowledge. This study also introduces two new datasets, SVAMPClean and Trig300, to further advance the testing of LLMs' reasoning abilities.</p>
+            </div>
+            <div class="pub-panel bibtex" id="evoss-bibtex">
+<pre><code>@inproceedings{piehl2025evoss,
+  title     = {Solving Math Word Problems Using Estimation Verification and Equation Generation},
+  author    = {Piehl, Mitchell and Wilson, Dillon and Kalita, Ananya and Kalita, Jugal},
+  booktitle = {2025 International Conference on Machine Learning and Applications (ICMLA)},
+  year      = {2025},
+  publisher = {IEEE}
+}</code></pre>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>Mitchell Piehl</span>
+      <ul class="footer-links">
+        <li><a href="mailto:mitchellpiehl@gmail.com">Email</a></li>
+        <li><a href="https://scholar.google.com/citations?user=_JR4vFcAAAAJ">Google Scholar</a></li>
+        <li><a href="https://github.com/mitchellpiehl">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/mitchell-piehl-778435250">LinkedIn</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

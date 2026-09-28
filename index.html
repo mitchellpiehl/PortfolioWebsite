@@ -1,123 +1,259 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <title>Mitchell Piehl | Portfolio</title>
-    <link rel="icon" href="images/mp.png" type="image/png" />
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="normalize.css" />
-    <link rel="stylesheet" href="portfolio.css" />
-  </head>
-  <body>
-    <!-- Header -->
-    <header id="header">
-    <div class="logo">
-        <img src="images/mp.png" alt="MP Logo" class="logo-img" />
-        <h1 class="site-title">Mitchell Piehl</h1>
-    </div>
-    <nav>
-        <ul id="nav">
-        <li><a href="index.html" class="current">About</a></li>
-        <li><a href="resume.html">Resume</a></li>
-        <li><a href="skills.html">Skills</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mitchell Piehl</title>
+  <meta name="description" content="Mitchell Piehl is a PhD candidate in Computer Science at the University of Iowa working on memory systems for large language models: efficiency, safety, and multimodal use.">
+  <link rel="canonical" href="https://mitchellpiehl.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Mitchell Piehl">
+  <meta property="og:title" content="Mitchell Piehl">
+  <meta property="og:description" content="PhD candidate in Computer Science at the University of Iowa. Memory systems for large language models.">
+  <meta property="og:url" content="https://mitchellpiehl.com/">
+  <meta property="og:image" content="https://mitchellpiehl.com/assets/img/social-card.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Mitchell Piehl, PhD candidate in Computer Science at the University of Iowa">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#fcfbf8" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#141413" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&amp;family=Source+Serif+4:ital,opsz,wght@0,8..60,400..700;1,8..60,400..700&amp;display=swap">
+  <link rel="stylesheet" href="assets/css/site.css">
+  <script>document.documentElement.classList.add("js")</script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Mitchell Piehl",
+    "url": "https://mitchellpiehl.com/",
+    "image": "https://mitchellpiehl.com/assets/img/mitchell-piehl-800.jpg",
+    "jobTitle": "PhD Candidate in Computer Science",
+    "affiliation": { "@type": "CollegeOrUniversity", "name": "University of Iowa" },
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "University of St. Thomas" },
+    "email": "mailto:mitchellpiehl@gmail.com",
+    "knowsAbout": ["Large language models", "Long-term memory for LLMs", "AI safety", "Retrieval-augmented generation", "Video anomaly detection"],
+    "sameAs": [
+      "https://scholar.google.com/citations?user=_JR4vFcAAAAJ",
+      "https://github.com/mitchellpiehl",
+      "https://www.linkedin.com/in/mitchell-piehl-778435250"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="wordmark" href="./">Mitchell Piehl</a>
+      <nav class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
-    </nav>
-    </header>
-    
-
-    <!-- Hero -->
-    <section class="hero fade-in">
-    <div class="hero-content">
-        <img src="images/IMG_8350.jpeg" alt="Mitchell Piehl" class="profile-img" />
-        <h1>Hi, I'm Mitchell 👋</h1>
-        <h2>PhD Student | AI/ML Researcher | Educator</h2>
-        <p>
-        I am a PhD student at the University of Iowa focusing on sustainable AI, reasoning in large language models, and the ethics of emerging technologies.  
-        My mission is to advance artificial intelligence in ways that are socially responsible, environmentally conscious, and academically rigorous.  
-        </p>
-        <div class="cta-buttons">
-        <a href="resume.html" class="btn primary">📄 View Resume</a>
-        <a href="projects.html" class="btn secondary">💻 See Projects</a>
-        </div>
+      </nav>
     </div>
-    </section>
+  </header>
 
-    <!-- About -->
-    <section id="about" class="fade-in container">
-    <h2>About Me</h2>
-    <div class="about-grid">
-        <div>
-        <p>
-            I’m a Computer Science PhD student at the University of Iowa, researching
-            natural language processing, large language models, and sustainable AI.
-            Previously, I graduated summa cum laude from the University of St. Thomas (GPA 3.98).
-        </p>
-        <ul class="highlights">
-            <li>⚡ Developed <em>estimation verification</em> techniques improving LLM math problem accuracy.</li>
-            <li>⚡ Created interactive platforms for <em>AI history & sustainability</em>.</li>
-            <li>⚡ Tutored and TA’d undergraduate courses in data science & CS.</li>
-            <li>⚡ NCAA Division I Track & Field team captain — leadership in athletics & academics.</li>
-        </ul>
+  <main id="main">
+    <div class="wrap">
+
+      <section class="intro" aria-labelledby="name">
+        <div class="intro-text">
+          <h1 id="name">Mitchell Piehl</h1>
+          <p class="role">PhD candidate in Computer Science at the University of Iowa</p>
+
+          <p>I work with <a href="https://sites.google.com/view/mcye/home">Muchao Ye</a> on memory systems for large language models. A model can only reason over what fits in its context window, so memory systems save past interactions outside the model and bring back the relevant pieces when they're needed. I focus on making those systems efficient, accurate, and hard to manipulate, and on using them beyond chat, in settings like long videos.</p>
+
+          <p>Right now I'm working on training memory write policies with reinforcement learning, on using human feedback so a system's memory adapts to the person using it, on test-time learning, and on interfaces that show people what a system remembers so they can check it and trust it.</p>
+
+          <p>Alongside my PhD, I'm an AI development intern at Inspire Medical Systems, where I build LLM tools used by more than a dozen teams across the company. Before Iowa, I studied computer science at the University of St. Thomas in St. Paul and captained the Division I track and field team.</p>
+
+          <ul class="link-row">
+            <li><a href="mailto:mitchellpiehl@gmail.com">Email</a></li>
+            <li><a href="https://scholar.google.com/citations?user=_JR4vFcAAAAJ">Google Scholar</a></li>
+            <li><a href="https://github.com/mitchellpiehl">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/mitchell-piehl-778435250">LinkedIn</a></li>
+            <li><a href="resume.html">Resume</a></li>
+          </ul>
         </div>
-        <div class="about-card">
-        <h3>Quick Facts</h3>
-        <p><strong>PhD:</strong> Computer Science, University of Iowa</p>
-        <p><strong>Research:</strong> Sustainable AI, LLM reasoning, AI ethics</p>
-        <p><strong>Leadership:</strong> D1 Track Captain, Tutor & TA</p>
-        <p><strong>Passions:</strong> AI for good, running, mentoring</p>
+
+        <div class="intro-photo">
+          <img src="assets/img/mitchell-piehl-800.jpg" srcset="assets/img/mitchell-piehl-480.jpg 480w, assets/img/mitchell-piehl-800.jpg 800w" sizes="(max-width: 760px) 148px, 264px" width="800" height="1000" alt="Portrait of Mitchell Piehl">
         </div>
+      </section>
+
+      <section class="section" aria-labelledby="research-label">
+        <h2 class="section-label" id="research-label">Research</h2>
+        <div class="research-grid">
+          <article class="research-item">
+            <p class="kicker">Efficiency and accuracy</p>
+            <h3><a href="research.html#memfit">MemFit</a></h3>
+            <p>A long-term memory system that saves each conversation turn word for word without running it through an LLM, then does the careful work at retrieval time. It had the best overall results on LoCoMo, LongMemEval-S, and MemGallery.</p>
+            <p class="figure"><strong>3.9 to 52.6&times;</strong> faster memory construction than the systems we compared against</p>
+          </article>
+          <article class="research-item">
+            <p class="kicker">Safety</p>
+            <h3><a href="research.html#ermia">ER-MIA</a></h3>
+            <p>Anyone who can chat with a memory-augmented LLM can write to its memory. ER-MIA plants false memories built to be retrieved right alongside real ones, then measures how much they change the model's answers.</p>
+            <p class="figure"><strong>17.7 to 28.5 points</strong> of accuracy lost on A-MEM across three models, from 3B to 27B parameters</p>
+          </article>
+          <article class="research-item">
+            <p class="kicker">Video</p>
+            <h3><a href="research.html#latern">LATERN</a></h3>
+            <p>Gives a frozen vision-language model a memory of what it has already seen in a video, checks that memory against the current frames before using it, and groups evidence into whole events with one explanation each.</p>
+            <p class="figure"><strong>80.5%</strong> of the time, people preferred its explanations to clip-by-clip ones</p>
+          </article>
+        </div>
+        <p class="section-foot"><a class="more-link" href="research.html">See how the three papers fit together &rarr;</a></p>
+      </section>
+
+      <section class="section" aria-labelledby="pubs-label">
+        <h2 class="section-label" id="pubs-label">Publications</h2>
+        <ol class="pub-compact">
+          <li>
+            <h3 class="pub-title"><a href="publications.html#memfit">MemFit: Efficient Long-Term Agentic Memory</a></h3>
+            <p class="pub-authors"><span class="me">Mitchell Piehl</span>, Muchao Ye</p>
+            <p class="pub-where">Under review, 2026</p>
+            <p class="pub-links"><a href="research.html#memfit">Summary</a><a href="publications.html#memfit">BibTeX</a></p>
+          </li>
+          <li>
+            <h3 class="pub-title"><a href="publications.html#latern">LATERN: Test-Time Context-Aware Explainable Video Anomaly Detection</a></h3>
+            <p class="pub-authors"><span class="me">Mitchell Piehl</span>, Muchao Ye</p>
+            <p class="pub-where">Under review, 2026</p>
+            <p class="pub-links"><a href="https://arxiv.org/abs/2605.15054">arXiv</a><a href="research.html#latern">Summary</a><a href="publications.html#latern">BibTeX</a></p>
+          </li>
+          <li>
+            <h3 class="pub-title"><a href="publications.html#ermia">ER-MIA: Black-Box Adversarial Memory Injection Attacks on Long-Term Memory-Augmented Large Language Models</a></h3>
+            <p class="pub-authors"><span class="me">Mitchell Piehl</span>, Zhaohan Xi, Zuobin Xiong, Pan He, Muchao Ye</p>
+            <p class="pub-where">Under review, 2026</p>
+            <p class="pub-links"><a href="https://arxiv.org/abs/2602.15344">arXiv</a><a href="research.html#ermia">Summary</a><a href="publications.html#ermia">BibTeX</a></p>
+          </li>
+          <li>
+            <h3 class="pub-title"><a href="publications.html#evoss">Solving Math Word Problems Using Estimation Verification and Equation Generation</a></h3>
+            <p class="pub-authors"><span class="me">Mitchell Piehl</span>, Dillon Wilson, Ananya Kalita, Jugal Kalita</p>
+            <p class="pub-where">IEEE International Conference on Machine Learning and Applications (ICMLA), 2025</p>
+            <p class="pub-links"><a href="https://arxiv.org/abs/2509.18565">arXiv</a><a href="https://github.com/mitchellpiehl/EVoSS">Code</a><a href="publications.html#evoss">BibTeX</a></p>
+          </li>
+        </ol>
+        <p class="section-foot"><a class="more-link" href="publications.html">Abstracts and citations &rarr;</a></p>
+      </section>
+
+      <section class="section" aria-labelledby="exp-label">
+        <h2 class="section-label" id="exp-label">Experience</h2>
+        <div class="entries">
+          <div class="entry">
+            <p class="entry-when">May 2026 to present</p>
+            <div>
+              <h3>AI Development Intern</h3>
+              <p class="org">Inspire Medical Systems &middot; Minneapolis, Minnesota</p>
+              <p>I built and deployed an internal web app for an LLM document processing tool, which cut processing time by about 80% for more than 12 teams. I also build and evaluate RAG pipelines and AI agents that automate work across the company, and I bring ideas from research into production systems.</p>
+            </div>
+          </div>
+          <div class="entry">
+            <p class="entry-when">Aug 2025 to present</p>
+            <div>
+              <h3>PhD Fellow and Graduate Researcher</h3>
+              <p class="org">University of Iowa &middot; Iowa City, Iowa</p>
+              <p>Research on memory for LLMs and multimodal LLMs with Muchao Ye. I lead MemFit, ER-MIA, and LATERN, and I built the evaluation harnesses we use to benchmark memory and RAG systems with F1, BLEU, ROUGE, exact match, and LLM-as-judge scoring.</p>
+            </div>
+          </div>
+          <div class="entry">
+            <p class="entry-when">May to Aug 2024</p>
+            <div>
+              <h3>NLP Researcher</h3>
+              <p class="org">University of Colorado Colorado Springs</p>
+              <p>Worked on math reasoning in LLMs. I designed EVoSS, which has the model write equations for a symbolic solver and then checks the result against the model's own estimate. It became a first-author paper at IEEE ICMLA 2025. I also built two new benchmark datasets, SVAMPClean and Trig300.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="edu-label">
+        <h2 class="section-label" id="edu-label">Education</h2>
+        <div class="entries">
+          <div class="entry">
+            <p class="entry-when">2025 to present</p>
+            <div>
+              <h3>Ph.D. in Computer Science</h3>
+              <p class="org">University of Iowa</p>
+              <p>PhD candidate advised by Muchao Ye, supported by a Sheets Fellowship. I'll also receive an M.S. in Computer Science along the way in spring 2027.</p>
+            </div>
+          </div>
+          <div class="entry">
+            <p class="entry-when">2025</p>
+            <div>
+              <h3>B.S. in Computer Science</h3>
+              <p class="org">University of St. Thomas &middot; St. Paul, Minnesota</p>
+              <p>Summa cum laude, 3.98 GPA. Minors in data science, applied statistics, philosophy and science, and logic and analytical reasoning. Captain of the Division I track and field team, all-conference athlete, holder of seven school records, and a member of the Student-Athlete Advisory Committee.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="teach-label">
+        <h2 class="section-label" id="teach-label">Teaching</h2>
+        <div class="entries">
+          <div class="entry">
+            <p class="entry-when">Aug 2024 to May 2025</p>
+            <div>
+              <h3>Teaching and Research Assistant</h3>
+              <p class="org">University of St. Thomas</p>
+              <p>Developed materials for a graduate Foundations of AI course, including the interactive history of AI listed below, and researched how thinking about AI changed from early symbolic systems to neural networks. I was also a TA for Applied Regression Analysis.</p>
+            </div>
+          </div>
+          <div class="entry">
+            <p class="entry-when">Aug 2023 to May 2024</p>
+            <div>
+              <h3>Computer Science Tutor</h3>
+              <p class="org">University of St. Thomas</p>
+              <p>Tutored students in Java, Python, C++, and MATLAB and gave feedback on their programming projects.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="other-label">
+        <h2 class="section-label" id="other-label">Other projects</h2>
+        <div class="entries">
+          <div class="entry">
+            <p class="entry-when">mitchellpiehl.github.io</p>
+            <div>
+              <h3><a href="https://mitchellpiehl.github.io">History of AI</a></h3>
+              <p>An interactive timeline of the people, papers, and ideas in the history of AI, built for a graduate Foundations of AI course.</p>
+            </div>
+          </div>
+          <div class="entry">
+            <p class="entry-when">tosustainableai.com</p>
+            <div>
+              <h3><a href="https://tosustainableai.com">Sustainable AI</a></h3>
+              <p>A public guide to the environmental and social costs of AI and the work being done to reduce them.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
     </div>
-    </section>
+  </main>
 
-    <!-- Highlights -->
-    <section id="experience" class="fade-in container">
-    <h2>Research & Work Highlights</h2>
-    <div class="cards">
-        <div class="card">
-        <h3>NLP Research</h3>
-        <p>Explored reasoning in large language models, sustainable AI techniques, and vision-language models.</p>
-        </div>
-        <div class="card">
-        <h3>Education</h3>
-        <p>Experience in web development for educational settings including history of AI and sustainable AI. Also has experience teaching and tutoring undergraduate courses, and developed graduate course curriculum. </p>
-        </div>
-        <div class="card">
-        <h3>Leadership</h3>
-        <p>Team captain and advisory rep for collegiate track & field, fostering teamwork and resilience.</p>
-        </div>
-    </div>
-    </section>
-
-    <!-- Skills Preview -->
-    <section id="skills" class="fade-in container">
-    <h2>Tech Stack</h2>
-    <div class="tech-logos">
-        <img src="images/logos/python-5.svg" alt="Python" />
-        <img src="images/logos/java.svg" alt="Java" />
-        <img src="images/logos/sqlite.svg" alt="SQL" />
-        <img src="images/logos/javascript-r.svg" alt="JavaScript" />
-        <img src="images/logos/r-lang.svg" alt="R" />
-        <img src="images/logos/github-icon-2.svg" alt="Git" />
-    </div>
-    </section>
-
-
-    <!-- Quick Links -->
-    <section class="quick-links fade-in">
-      <h2>Explore More</h2>
-      <ul>
-        <li><a href="resume.html" class="btn secondary">Resume</a></li>
-        <li><a href="skills.html" class="btn secondary">Skills</a></li>
-        <li><a href="projects.html" class="btn secondary">Projects</a></li>
-        <li><a href="contact.html" class="btn secondary">Contact</a></li>
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>Mitchell Piehl</span>
+      <ul class="footer-links">
+        <li><a href="mailto:mitchellpiehl@gmail.com">Email</a></li>
+        <li><a href="https://scholar.google.com/citations?user=_JR4vFcAAAAJ">Google Scholar</a></li>
+        <li><a href="https://github.com/mitchellpiehl">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/mitchell-piehl-778435250">LinkedIn</a></li>
       </ul>
-    </section>
-
-    <!-- Footer -->
-    <footer id="footer">
-      <p>© 2025 Mitchell Piehl</p>
-    </footer>
-  </body>
+    </div>
+  </footer>
+</body>
 </html>

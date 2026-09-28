@@ -1,98 +1,135 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title> Portfolio</title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width" initial-scale="1.0"/>
-        <link rel="icon" href="images/mp.png" type="image/png" />
-        <link rel="stylesheet" href="normalize.css" />
-        <link rel="stylesheet" href="portfolio.css" />
-    </head>
-    <body>
-        <header id="header">
-    <div class="logo">
-        <img src="images/mp.png" alt="MP Logo" class="logo-img" />
-        <h1 class="site-title">Mitchell Piehl</h1>
-    </div>
-    <nav>
-        <ul id="nav">
-        <li><a href="index.html">About</a></li>
-        <li><a href="resume.html">Resume</a></li>
-        <li><a href="skills.html">Skills</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html" class="current">Contact</a></li>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Mitchell Piehl</title>
+  <meta name="description" content="How to reach Mitchell Piehl: email, Google Scholar, GitHub, LinkedIn, or the contact form.">
+  <link rel="canonical" href="https://mitchellpiehl.com/contact.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Mitchell Piehl">
+  <meta property="og:title" content="Contact | Mitchell Piehl">
+  <meta property="og:description" content="How to reach Mitchell Piehl.">
+  <meta property="og:url" content="https://mitchellpiehl.com/contact.html">
+  <meta property="og:image" content="https://mitchellpiehl.com/assets/img/social-card.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#fcfbf8" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#141413" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&amp;family=Source+Serif+4:ital,opsz,wght@0,8..60,400..700;1,8..60,400..700&amp;display=swap">
+  <link rel="stylesheet" href="assets/css/site.css">
+  <script>document.documentElement.classList.add("js")</script>
+  <script src="assets/js/site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="wordmark" href="./">Mitchell Piehl</a>
+      <nav class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
         </ul>
-    </nav>
-    </header>
-        <div id="wrapper">
-            <div id="content" class="contact_me">
-                <h1 class="center">Contact Me</h1>
-
-                <div class="contacts">
-                    <ul>
-                        <li>
-                            <a href="https://www.linkedin.com/in/mitchell-piehl-778435250" target="_blank">
-                                <img src="images/logos/linkedin-icon-3.svg" class="contact-logo" />
-                                <span>Add me on LinkedIn</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.instagram.com/mitchellpiehl" target="_blank">
-                                <img src="images/logos/instagram-2016-5.svg" class="contact-logo" />
-                                <span>Follow me on Instagram</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/mitchellpiehl/" target="_blank">
-                                <img src="images/logos/github-icon-2.svg" class="contact-logo" />
-                                <span>View my GitHub</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="mailto:mitchellpiehl@gmail.com" target="_blank">
-                                <img src="images/logos/official-gmail-icon-2020-.svg" class="contact-logo" />
-                                <span>Email me at mitchellpiehl@gmail.com</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            
-                <form action="https://api.web3forms.com/submit" method="POST">
-                    <input type="hidden" name="access_key" value="757d72b7-71f0-4681-ba07-c7efb58d6746">
-                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-
-                    <label for="first">First Name:</label>
-                    <input type="text" name="first" id="first" required />
-            
-                    <label for="last">Last Name:</label>
-                    <input type="text" name="last" id="last" required />
-            
-                    <label for="email_address">Email:</label>
-                    <input type="email" name="email" id="email_address" required />
-            
-                    <label for="phone">Phone Number:</label>
-                    <input type="tel" name="phone" id="phone" />
-            
-                    <label for="job">Who are you?</label>
-                    <select name="job" id="job">
-                        <option value="recruiter">Job Recruiter</option>
-                        <option value="student">Student</option>
-                        <option value="research">Researcher</option>
-                        <option value="professor">Professor</option>
-                        <option value="other">Other</option>
-                    </select>
-            
-                    <label for="message">Message:</label>
-                    <textarea name="message" id="message" required></textarea>
-
-                    <input type="hidden" name="redirect" value="https://pieh6361.dima358.com/portfolio/thanks.html">
-            
-                    <input type="submit" value="Send" />
-                </form>
-            </div>
-        </div>
-    </body>
-    <div id="footer">
-        © 2025 Mitchell Piehl
+      </nav>
     </div>
+  </header>
+
+  <main id="main">
+    <div class="wrap">
+      <div class="page-head">
+        <h1>Contact</h1>
+        <p class="lede">Email is the fastest way to reach me. The form goes to the same inbox.</p>
+      </div>
+
+      <div class="contact-grid">
+        <ul class="contact-list">
+          <li>
+            <span class="label">Email</span>
+            <span class="email-line">
+              <a href="mailto:mitchellpiehl@gmail.com">mitchellpiehl@gmail.com</a>
+              <button class="chip" type="button" data-copy="mitchellpiehl@gmail.com" hidden>Copy</button>
+            </span>
+          </li>
+          <li>
+            <span class="label">Google Scholar</span>
+            <a href="https://scholar.google.com/citations?user=_JR4vFcAAAAJ">Mitchell Piehl</a>
+          </li>
+          <li>
+            <span class="label">GitHub</span>
+            <a href="https://github.com/mitchellpiehl">github.com/mitchellpiehl</a>
+          </li>
+          <li>
+            <span class="label">LinkedIn</span>
+            <a href="https://www.linkedin.com/in/mitchell-piehl-778435250">Mitchell Piehl</a>
+          </li>
+        </ul>
+
+        <div>
+          <p class="form-status is-ok" id="sent" tabindex="-1" hidden>Thanks, your message was sent.</p>
+          <!-- Messages are delivered by Web3Forms. The access key is meant to be public. -->
+          <form class="form" id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="757d72b7-71f0-4681-ba07-c7efb58d6746">
+            <input type="hidden" name="subject" value="New message from mitchellpiehl.com">
+            <input type="hidden" name="from_name" value="mitchellpiehl.com">
+            <input type="hidden" name="redirect" value="https://mitchellpiehl.com/contact.html#sent">
+            <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+            <div class="row-2">
+              <div class="field">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" autocomplete="name" required>
+              </div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" autocomplete="email" required>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="role">I'm reaching out as a <span class="optional">(optional)</span></label>
+              <select id="role" name="role">
+                <option value="">Choose one</option>
+                <option>Recruiter</option>
+                <option>Researcher</option>
+                <option>Professor</option>
+                <option>Student</option>
+                <option>Something else</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+
+            <div>
+              <button class="btn" type="submit">Send message</button>
+            </div>
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>Mitchell Piehl</span>
+      <ul class="footer-links">
+        <li><a href="mailto:mitchellpiehl@gmail.com">Email</a></li>
+        <li><a href="https://scholar.google.com/citations?user=_JR4vFcAAAAJ">Google Scholar</a></li>
+        <li><a href="https://github.com/mitchellpiehl">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/mitchell-piehl-778435250">LinkedIn</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
 </html>
